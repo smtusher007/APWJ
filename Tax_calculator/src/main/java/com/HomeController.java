@@ -1,6 +1,7 @@
 package com;
 
 //import org.springframework.beans.factory.annotation.Autowired;
+import com.sun.istack.internal.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -48,6 +49,7 @@ public class HomeController {
     @RequestMapping("/registration/v2")
     public String cal (@ModelAttribute("Basic_salary") int Basic_salary, @ModelAttribute("House_rent") int House_rent, @ModelAttribute("Medical_allowance") int Medical_allowance,
                        @ModelAttribute("Conveyance") int Conveyance,@ModelAttribute("Incentive") int Incentive,@ModelAttribute("Festival_Bonus") int Festival_Bonus, Model model)  {
+
         model.addAttribute("Basic_salary",Basic_salary);
         model.addAttribute("House_rent", House_rent);
 

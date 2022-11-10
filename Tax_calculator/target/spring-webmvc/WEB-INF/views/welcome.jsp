@@ -133,6 +133,8 @@
     </tr>
 </table>
 <a href="https://juralacuity.com/tax-update-2021-2022-bangladesh/">Reference-Jural Acuity</a>
+<br><br>
+<a href="views/registration">Go Back</a>
 <br>
 
 </body>
