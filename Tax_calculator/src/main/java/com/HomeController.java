@@ -1,7 +1,6 @@
 package com;
 
 //import org.springframework.beans.factory.annotation.Autowired;
-import com.sun.istack.internal.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,9 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 //import javax.xml.transform.Result;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.*;
+
 
 @Controller
 public class HomeController {
@@ -25,28 +22,12 @@ public class HomeController {
         this.dataSource = dataSource;
     }
 
-    @RequestMapping("/hello")
-    public void hello(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        PrintWriter printWriter = response.getWriter();
-        printWriter.write("<h1>Hello Java Homepage<h1>");
-    }
-
-    @RequestMapping("/greet")
-    public String greet() {
-        return "home";
-    }
-
-
-
-
-
-
     @RequestMapping("/registration")
     public String calc(HttpServletRequest request, HttpServletResponse response){
         return "registration";
     }
 
-    @RequestMapping("/registration/v2")
+    @RequestMapping("/calculatedTax")
     public String cal (@ModelAttribute("Basic_salary") int Basic_salary, @ModelAttribute("House_rent") int House_rent, @ModelAttribute("Medical_allowance") int Medical_allowance,
                        @ModelAttribute("Conveyance") int Conveyance,@ModelAttribute("Incentive") int Incentive,@ModelAttribute("Festival_Bonus") int Festival_Bonus, Model model)  {
 
@@ -146,7 +127,7 @@ if(Conveyance<30000){
 
 
 
-        return "welcome";
+        return "CalculatedTax";
     }
 
 

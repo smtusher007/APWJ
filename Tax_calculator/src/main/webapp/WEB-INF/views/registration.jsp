@@ -17,7 +17,7 @@
     <center><h2>Income Tax Calculator :</h2></center>
 </div>
 
-    <form method="post" action="registration/v2">
+    <form method="post" action="calculatedTax">
         <br><br>
         Zone :<select name="Zone">
         <option value="Dhaka/ Chittagong mega city">Dhaka/ Chittagong mega city</option>
