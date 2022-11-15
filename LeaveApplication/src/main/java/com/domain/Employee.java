@@ -12,27 +12,27 @@ public class Employee {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id=1;
 
     @NotNull
     @Column(name = "firstName")
-    private String firstName;
+    private String firstName="Kamrul";
 
     @NotNull
     @Column(name = "lastName")
-    private String lastName;
+    private String lastName="Hasan";
 
     @NotNull
     @Column(name = "gender")
-    private String gender;
+    private String gender="male";
 
     @NotNull
     @Column(name="joiningDate")
-    private Date joiningDate;
+    private Date joiningDate = new Date(2020,05,01);
 
     @NotNull
     @Column(name = "status")
-    private String status;
+    private String status="Active";
 
     public int getId() {
         return id;

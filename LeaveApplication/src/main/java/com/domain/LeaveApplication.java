@@ -11,19 +11,19 @@ public class LeaveApplication {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id=1;
 
     @NotNull
     @Column(name="fromDate")
-    private Date fromDate;
+    private Date fromDate = new Date(2022,10,15);
 
     @NotNull
     @Column(name="toDate")
-    private Date toDate;
+    private Date toDate = new Date(2022,10,18);
 
     @NotNull
     @Column(name="reason")
-    private String reason;
+    private String reason="Vacation";
 
     public int getId() {
         return id;

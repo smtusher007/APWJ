@@ -10,15 +10,15 @@ public class LeaveType {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id=1;
 
     @NotNull
     @Column(name="category")
-    private  String category;
+    private  String category="Vacation";
 
     @NotNull
     @Column(name="Total_Days")
-    private String Total_Days;
+    private int Total_Days=1;
 
     public int getId() {
         return id;
@@ -36,11 +36,11 @@ public class LeaveType {
         this.category = category;
     }
 
-    public String getTotal_Days() {
+    public int getTotal_Days() {
         return Total_Days;
     }
 
-    public void setTotal_Days(String total_Days) {
+    public void setTotal_Days(int total_Days) {
         Total_Days = total_Days;
     }
 }
