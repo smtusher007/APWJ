@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "category": "Urgent Leave",
+  "totalDays": 12,
+
+  "id": 2,
+  "category": "Sick Leave",
+  "totalDays": 10
+}
